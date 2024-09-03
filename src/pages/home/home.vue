@@ -113,6 +113,8 @@ const goToDestinations = ()=>{
 
 .homepage .homepage--right-content .explore span{
     z-index: 2;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
 }
 
 .homepage .homepage--right-content .explore::after{
@@ -120,7 +122,8 @@ const goToDestinations = ()=>{
     height: 200px;
     background-color: rgba(255,255,255,0.4);
     content: "";
-    position:absolute;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
     z-index: 0;
     border-radius: 100%;
     transition: all 1s ease-in-out;
