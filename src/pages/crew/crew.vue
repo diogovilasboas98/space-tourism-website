@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { useCrew } from '../../pinia/crew';
 
-import bgImgDesktop from '../../assets/crew/background-crew-desktop.jpg'
-import bgImgTablet from '../../assets/crew/background-crew-tablet.jpg'
-import bgImgMobile from '../../assets/crew/background-crew-mobile.jpg'
+import bgImgDesktop from '/assets/crew/background-crew-desktop.jpg'
+import bgImgTablet from '/assets/crew/background-crew-tablet.jpg'
+import bgImgMobile from '/assets/crew/background-crew-mobile.jpg'
 
 const store = useCrew()
 import Layout from '../../components/layout.vue';
@@ -31,7 +31,7 @@ function updateSlide(newCurr:number){
 }
 
 function getImage(url:string){
-    return new URL('../../assets/'+url, import.meta.url)
+    return new URL('/assets/'+url, import.meta.url)
 }
 </script>
 

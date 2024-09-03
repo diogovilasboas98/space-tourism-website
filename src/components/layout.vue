@@ -20,7 +20,7 @@ const orderNumberStr = computed(()=> `0${props.orderNumber} `)
 <template>
     <div class="wrapper" :class="screenSize">
         <div @click="()=>router.push('/')" class="logo">
-            <img width="32" src="../assets/shared/logo.svg">
+            <img width="32" src="/assets/shared/logo.svg">
         </div> 
         <hr v-if="screenSize == 'desktop'" class="spacer">
         <Navbar  :mobile="screenSize == 'mobile'" class="navbar"></Navbar>

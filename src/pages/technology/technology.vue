@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { useTechnologies } from '../../pinia/technology';
 
-import bgImgDesktop from '../../assets/technology/background-technology-desktop.jpg'
-import bgImgTablet from '../../assets/technology/background-technology-tablet.jpg'
-import bgImgMobile from '../../assets/technology/background-technology-mobile.jpg'
+import bgImgDesktop from '/assets/technology/background-technology-desktop.jpg'
+import bgImgTablet from '/assets/technology/background-technology-tablet.jpg'
+import bgImgMobile from '/assets/technology/background-technology-mobile.jpg'
 
 import screenSize from '../../scripts/screensize';
 import Layout from '../../components/layout.vue';
@@ -31,7 +31,7 @@ function updateCurrStep(step:number){
 }
 
 function getImage(url:string){
-    return new URL('../../assets/'+url, import.meta.url)
+    return new URL('/assets/'+url, import.meta.url)
 }
 
 </script>

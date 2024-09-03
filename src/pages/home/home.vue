@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import Layout from '../../components/layout.vue';
-import bgImgDesktop from "../../assets/home/background-home-desktop.jpg"
-import bgImgTablet from "../../assets/home/background-home-tablet.jpg"
-import bgImgMobile from "../../assets/home/background-home-mobile.jpg"
+import bgImgDesktop from "/assets/home/background-home-desktop.jpg"
+import bgImgTablet from "/assets/home/background-home-tablet.jpg"
+import bgImgMobile from "/assets/home/background-home-mobile.jpg"
 import screenSize from '../../scripts/screensize';
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';

@@ -2,9 +2,9 @@
 import { computed } from 'vue';
 import { useDestinations } from '../../pinia/destinations';
 
-import bgImgDesktop from '../../assets/destination/background-destination-desktop.jpg'
-import bgImgTablet from '../../assets/destination/background-destination-tablet.jpg'
-import bgImgMobile from '../../assets/destination/background-destination-mobile.jpg'
+import bgImgDesktop from '/assets/destination/background-destination-desktop.jpg'
+import bgImgTablet from '/assets/destination/background-destination-tablet.jpg'
+import bgImgMobile from '/assets/destination/background-destination-mobile.jpg'
 
 import screenSize from '../../scripts/screensize';
 
@@ -32,7 +32,7 @@ function updateSelected(tab: any){
 }
 
 function getImage(url:string){
-    return new URL('../../assets/'+url, import.meta.url)
+    return new URL('/assets/'+url, import.meta.url)
 }
 </script>
 <template>
